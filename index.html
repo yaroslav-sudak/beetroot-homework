@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./home-ico.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- * Styles -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- General -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Variables -->
+    <link rel="stylesheet" href="./css/variables.css" />
+    <!-- Local -->
+    <link rel="stylesheet" href="./index.css" />
     <title>Home Page</title>
   </head>
-  <body>
-    <!--  -->
-  </body>
+  <div id="app">
+    <body>
+      <div class="main-title">
+        <h1>Main Page</h1>
+      </div>
+      <div class="lessons">
+        <ul class="lessons-list">
+          <!-- TODO Як зробити щоб інші блоки не рухалися?
+              TODO як зробити щоб блоки були колонкою, але inline? -->
+          <li class="lesson"><a href="./pages/summary/summary.html">CSS</a></li>
+          <li class="lesson">
+            <a href="./pages/template/template.html">My Template</a>
+          </li>
+        </ul>
+      </div>
+    </body>
+  </div>
 </html>

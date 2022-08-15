@@ -1,0 +1,10 @@
+.lesson {
+  margin-bottom: 12px;
+  transition: font-size 0.2s;
+}
+.lesson:hover {
+  font-size: 31px;
+}
+.lesson:last-child {
+  margin: 0;
+}

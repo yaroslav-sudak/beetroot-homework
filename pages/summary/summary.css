@@ -1,0 +1,8 @@
+.go-home{
+  position: absolute;
+  left: 0;
+  transition: font-size 0.2s;
+}
+.go-home:hover {
+  font-size: 31px;
+}

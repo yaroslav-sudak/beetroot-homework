@@ -1,5 +1,23 @@
+@font-face {
+  src: url("../fonts/main-font.ttf");
+  font-family: "MainFont";
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+body {
+  background-color: var(--c-white);
+  font: var(--f-main-font);
+  font-family: "MainFont";
+  color: var(--c-black);
+  text-align: center;
+}
+#app {
+  font-size: 30px;
+}
+a {
+  color: var(--c-black);
+  text-decoration: none;
 }

@@ -1,0 +1,10 @@
+:root {
+  /** Colors */
+  --c-black: #1c2321;
+  --c-white: #fff8e8;
+  --c-orange: #f96900;
+  --c-blue: #80a1d4;
+  --c-green: #08a045;
+  /** Fonts */
+  --f-main-size: 30px;
+}
