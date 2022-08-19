@@ -1,9 +1,12 @@
 .lesson {
   margin-bottom: 12px;
-  transition: font-size 0.2s;
 }
-.lesson:hover {
-  font-size: 31px;
+.lesson-link{
+  display: inline-block;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lesson-link:hover {
+  transform: scale(1.1);
 }
 .lesson:last-child {
   margin: 0;
