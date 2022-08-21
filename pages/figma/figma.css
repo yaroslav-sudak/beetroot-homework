@@ -21,8 +21,8 @@ body {
   font-size: 18px;
 }
 .navigation-wrapper {
-  padding-bottom: 30px;
   border-bottom: 1px solid #828282;
+  padding-bottom: 30px;
   max-width: 940px;
   display: block;
   margin: auto;
@@ -55,9 +55,9 @@ body {
   text-align: left;
 }
 .main-title {
+  margin-bottom: 38px;
   font-weight: 700;
   font-size: 46px;
-  margin-bottom: 38px;
 }
 .profile-photo {
   width: 100%;
@@ -72,7 +72,7 @@ body {
 .about-me-title {
   font-weight: 700;
   font-size: 34px;
-  margin: 28px;
+  margin-bottom: 28px;
 }
 .about-me-text {
   font-weight: 400;
