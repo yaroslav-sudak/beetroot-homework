@@ -1,8 +1,7 @@
-.go-home{
-  position: absolute;
-  left: 0;
-  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+@font-face {
+  src: url("../../fonts/gloria-hallelujah.ttf");
+  font-family: "GloriaHallelujah";
 }
-.go-home:hover {
-  transform: scale(1.1) translate(10px);
+body{
+  font-family: "GloriaHallelujah";
 }

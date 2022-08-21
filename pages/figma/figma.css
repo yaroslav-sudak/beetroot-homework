@@ -1,0 +1,80 @@
+@font-face {
+  src: url("../../fonts/open-sans.ttf");
+  font-family: "OpenSans";
+}
+@font-face {
+  src: url("../../fonts/gloria-hallelujah.ttf");
+  font-family: "GloriaHallelujah";
+}
+body {
+  background-color: #ffffff;
+  font-family: "OpenSans";
+}
+.app {
+  max-width: 940px;
+}
+.go-home {
+  font-family: "GloriaHallelujah";
+  font-family: "MainFont";
+}
+.page {
+  font-size: 18px;
+}
+.navigation-wrapper {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #828282;
+  max-width: 940px;
+  display: block;
+  margin: auto;
+}
+.navigation {
+  margin-top: 22px;
+}
+.navigation-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+.navigation-link {
+  font-style: normal;
+  color: #828282;
+  font-weight: 400;
+  font-size: 18px;
+}
+.navigation-item:last-child {
+  margin-right: 0px;
+}
+.navigation-link:active {
+  color: #070707;
+}
+.home {
+  margin-bottom: 100px;
+}
+.home-wrapper {
+  display: inline-block;
+  padding-top: 32px;
+  text-align: left;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 46px;
+  margin-bottom: 38px;
+}
+.profile-photo {
+  width: 100%;
+}
+.about-me {
+  background-color: #f6f6f6;
+}
+.about-me-wrapper {
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+}
+.about-me-title {
+  font-weight: 700;
+  font-size: 34px;
+  margin: 28px;
+}
+.about-me-text {
+  font-weight: 400;
+  font-size: 18px;
+}
