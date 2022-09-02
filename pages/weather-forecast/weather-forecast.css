@@ -10,7 +10,7 @@ body {
   background-color: #3399cc;
   min-height: 100vh;
 }
-.go-home-link{
+.go-home-link {
   color: white;
 }
 .page {
@@ -31,19 +31,26 @@ body {
   font-size: 22px;
   display: flex;
 }
-.title span{
+.title span {
   margin-right: 8px;
 }
 .title-icon {
   font-size: 27px;
 }
+.weather-forecast-wrapper {
+  background-color: #ffffff;
+}
 .weather-forecast-grid {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: space-between;
   border: 2px solid #ffffff;
-  background-color: #ffffff;
   flex-wrap: wrap;
   display: flex;
   width: 1164px;
+  opacity: 1;
+}
+.weather-forecast-grid:hover .weather-forecast-item:not(:hover){
+  opacity: 0.7;
 }
 .weather-forecast-item {
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,10 +61,6 @@ body {
   flex-wrap: initial;
   cursor: pointer;
   display: flex;
-  opacity: 0.7;
-}
-.weather-forecast-item:hover {
-  opacity: 1;
 }
 .small {
   height: 146px;
@@ -98,7 +101,7 @@ body {
 .wi {
   font-weight: 400;
 }
-.footer-title{
+.footer-title {
   font-size: 16px;
   display: flex;
   justify-content: left;
