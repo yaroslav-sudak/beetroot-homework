@@ -10,6 +10,9 @@ body {
   background-color: #3399cc;
   min-height: 100vh;
 }
+.go-home{
+  color: white;
+}
 .page {
   height: calc(100vh - var(--border) * 2);
   flex-direction: column;
