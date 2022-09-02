@@ -7,4 +7,52 @@
   --c-green: #08a045;
   /** Fonts */
   --f-main-size: 30px;
+  /* * Borders */
+  --border: 25px;
+    /* * Weather Colors */
+    --c-light-blue: #3399CC;
+    --c-blue: #33CCCC;
+    --c-purple: #996699;
+    --c-red: #C24747;
+    --c-orange: #E2674A;
+    --c-yellow: #FFCC66;
+    --c-light-green: #99CC99;
+    --c-green-blue: #669999;
+    --c-pink: #CC6699;
+    --c-dark-green: #339966;
+    --c-dark-purple: #666699;
+}
+/* * Weather Styles */
+.c-light-blue {
+  background-color: var(--c-light-blue);
+}
+.c-blue {
+  background-color: var(--c-blue);
+}
+.c-purple {
+  background-color: var(--c-purple);
+}
+.c-red {
+  background-color: var(--c-red);
+}
+.c-orange {
+  background-color: var(--c-orange);
+}
+.c-yellow {
+  background-color: var(--c-yellow);
+}
+.c-light-green {
+  background-color: var(--c-light-green);
+}
+.c-green-blue {
+  background-color: var(--c-green-blue);
+}
+.c-pink {
+  background-color: var(--c-pink);
+}
+.c-dark-green {
+  background-color: var(--c-dark-green);
+}
+.c-dark-purple {
+  background-color: var(--c-dark-purple);
 }
