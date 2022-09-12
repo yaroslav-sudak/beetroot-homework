@@ -1,0 +1,15 @@
+.button {
+  background-color: $bg-c-base;
+  font-family: $ff-button;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: em(14);
+  color: $c-gray;
+  transition: 0.1s $cb-base;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:active {
+  background-color: #f9f9f9;
+}

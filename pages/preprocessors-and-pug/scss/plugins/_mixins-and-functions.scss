@@ -1,0 +1,13 @@
+@function em($px){
+  @return calc($px / $fs-base) * 1em;
+}
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+@mixin corner($top, $right, $bottom, $left) {
+  border-top-width: $top * 1px;
+  border-right-width: $right * 1px;
+  border-bottom-width: $bottom * 1px;
+  border-left-width: $left * 1px;
+}

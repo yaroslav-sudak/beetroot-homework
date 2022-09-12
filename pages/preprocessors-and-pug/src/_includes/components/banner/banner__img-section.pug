@@ -1,0 +1,9 @@
+mixin banner__img-section()
+  .banner__img-section
+    +wrapper('banner__img-section__wrapper')
+      +border('banner__img-section__square--top-left square')
+      +border('banner__img-section__square--top-right square')
+      +border('banner__img-section__square--bottom-right square')
+      +border('banner__img-section__square--bottom-left square')
+      .banner__img-section__img__wrapper
+        img(src="./assets/icons/banner-photo.png" alt='Profile photo' class="border banner__img-section__img")

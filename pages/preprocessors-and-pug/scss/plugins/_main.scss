@@ -1,0 +1,29 @@
+@import "./variables";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: $bg-c-base;
+  text-align: center;
+  color: $f-c-base;
+}
+#app {
+  font-size: $fs-base;
+  height: 100vh;
+}
+.go-home {
+  transition: $t-base;
+  position: fixed;
+  font-size: 30px;
+  left: 20px;
+  top: 20px;
+}
+.go-home:hover {
+  transform: scale(1.1) translate(10px);
+}
+a {
+  color: var(--c-black);
+  text-decoration: none;
+}

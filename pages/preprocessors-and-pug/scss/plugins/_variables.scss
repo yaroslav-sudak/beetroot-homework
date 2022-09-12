@@ -1,0 +1,38 @@
+// * Colors (c)
+$c-white: #ffffff;
+$c-black: #000000;
+$c-yellow: #ffcc00;
+$c-light-gray: #898f8f;
+$c-gray: #666666;
+$c-dark-gray: #333333;
+// * Background Colors (bg-c)
+// Base background color
+$bg-c-base: $c-white;
+// * Font Colors (f-c)
+// Base font color
+$f-c-base: $c-black;
+// * Font size
+// Base font size
+$fs-base: 16;
+// * Font Family (ff)
+// Title font
+$ff-title: "Roboto";
+// Content font
+$ff-content: "Raleway";
+// Button foont
+$ff-button: "Open Sans";
+// * Cubic beziers
+// Base cubic bezier
+$cb-base: cubic-bezier(0.4, 0, 0.2, 1);
+// * Transitions
+// Base transition
+$t-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+// * Border colors
+// Base border color
+$b-c-base: $c-yellow;
+// * Section size
+// Base section size
+$ss-base: 400px;
+// * Image size
+// Base image size
+$img-s-base: 430px;

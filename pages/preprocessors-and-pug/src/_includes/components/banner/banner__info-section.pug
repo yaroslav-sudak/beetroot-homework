@@ -1,0 +1,18 @@
+include ../../elements/button
+include ./banner__info-section__icons
+
+mixin banner__info-section()
+  .banner__info-section
+    .banner__info-section__title
+      span='Sahariar Kabir'
+    +border('banner__info-section__border')
+    .banner__info-section__subtitle
+      span='Frontend Developer'
+    .banner__info-section__icons
+      +icons
+    .banner__info-section__content
+      span='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.'
+    .banner__info-section__bottom-border
+      .banner__info-section__bottom-border__space
+      .banner__info-section__bottom-border__space--right
+    +button('banner__info-section__button border', 'view profile')

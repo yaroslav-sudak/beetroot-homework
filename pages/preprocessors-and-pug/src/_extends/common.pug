@@ -1,0 +1,15 @@
+include ../_includes/elements/index
+include ../_includes/components/index
+
+doctype html
+html(lang='ua')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		+styles
+		title Preprocessors and Pug
+	body
+		//- include ../../assets/icons/common/symbol-defs.svg
+		#app
+			+go-home
+			+banner

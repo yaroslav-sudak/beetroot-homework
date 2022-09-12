@@ -1,0 +1,11 @@
+include ../../elements/wrapper
+include ./banner__head
+include ./banner__content
+include ./banner__img-section
+include ./banner__info-section
+
+mixin banner()
+  .banner
+    +wrapper('banner__wrapper')
+      +banner__head
+      +banner__content
