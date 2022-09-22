@@ -1,48 +1,216 @@
 @font-face {
-  src: url("../../fonts/Montserrat.ttf");
+  src: url("../../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-family: "Montserrat-Bold";
+}
+@font-face {
+  src: url("../../fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-family: "Montserrat-SemiBold";
+}
+@font-face {
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf");
   font-family: "Montserrat";
+}
+@font-face {
+  src: url("../../fonts/Gotham/Gotham-Bold.otf");
+  font-family: 'Gotham_Bold';
 }
 body {
   font-family: "Montserrat";
   background-color: white;
 }
 #app {
+  flex-direction: column;
   font-size: 16px;
+  display: flex;
 }
-.go-home{
+.go-home {
   font-size: 30px;
 }
-.header-wrapper {
+.header {
+  margin-bottom: 70px;
+}
+.header__wrapper {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  max-width: 1440px;
+  padding: 24px 0px;
+  max-width: 1200px;
   display: flex;
   margin: auto;
-  padding: 24px 120px;
 }
-.nav-link {
-  margin-right: 20px;
+.nav__link {
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 20px;
 }
-.nav-link:last-child {
+.nav__link:last-child {
   margin: 0;
 }
-.nav-link:hover{
-  color: #FF9900;
+.nav__link:hover {
+  color: #ff9900;
 }
-.header-button {
-  margin-right: 32px;
-  padding: 14px 26px;
-}
-.sign-in-button {
+.button {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Montserrat-SemiBold";
   border: 1px solid #bcd0e5;
   background-color: white;
+  padding: 14px 26px;
+  cursor: pointer;
+  color: black;
+}
+.button:hover {
+  opacity: 0.7;
+}
+.header__button {
+  margin-right: 32px;
   border-radius: 4px;
 }
-.sign-up-button {
+.colorized {
   background-color: #ff9900;
   border-radius: 4px;
   color: white;
   border: 0px;
+}
+.header__button:last-child {
+  margin: 0;
+}
+.banner {
+  flex-direction: column;
+  display: flex;
+}
+.title {
+  font-family: "Montserrat-Bold";
+  font-weight: 900;
+  font-size: 44px;
+}
+.banner__img-section {
+  margin-bottom: 100px;
+  align-self: center;
+}
+.banner__img-section__wrapper {
+  flex-direction: row;
+  max-width: 1200px;
+  display: flex;
+}
+.banner__img-section__content {
+  align-self: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.banner__img-section__title {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.banner__img-section__text {
+  margin-bottom: 20px;
+  line-height: 28px;
+  text-align: left;
+  font-size: 18px;
+}
+.banner__img-section__button {
+  padding: 14px 45px;
+  justify-self: left;
+}
+.banner__sign-up-section {
+  flex-direction: column;
+  margin-bottom: 100px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.banner__sign-up-section__title {
+  margin-bottom: 50px;
+  max-width: 540px;
+  font-size: 36px;
+  display: flex;
+}
+.banner__sign-up-section__bg {
+  position: absolute;
+  align-self: center;
+  height: 365px;
+  z-index: -1;
+  top: 120px;
+}
+.banner__sign-up-section__img {
+  height: 100%;
+}
+.banner__sign-up-section__icons {
+  margin-bottom: 70px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  display: flex;
+}
+.banner__sign-up-section__icon {
+  margin-right: 40px;
+  text-align: left;
+  width: 270px;
+}
+.banner__sign-up-section__icon:last-child {
+  margin-right: 0;
+}
+.banner__sign-up-section__icon > img {
+  margin-bottom: 30px;
+}
+.banner__sign-up-section__icon-title {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-family: "Montserrat-SemiBold";
+}
+.banner__sign-up-section__button {
+  padding: 14px 40px;
+  margin-bottom: 75px;
+}
+footer {
+  justify-content: center;
+  margin-bottom: 70px;
+  display: flex;
+}
+.footer__wrapper {
+  width: 1200px;
+}
+.footer__sections {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+}
+.footer__section {
+  flex-direction: column;
+  text-align: left;
+  display: flex;
+}
+.footer__section:last-child {
+  margin-right: 0;
+}
+.footer__title {
+  font-family: "Gotham_Bold";
+  margin-bottom: 30px;
+  max-width: 280px;
+  font-size: 20px;
+}
+.footer__text {
+  margin-bottom: 15px;
+  display: block;
+}
+.footer__text:last-child {
+  margin-bottom: 0;
+}
+.form__title {
+  margin-bottom: 25px;
+}
+.input {
+  border: 1px solid #BCD0E5;
+  padding: 15px 0 15px 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: black;
+  width: 100%;
+}
+.input::placeholder {
+  color: #BCD0E5;
+}
+.footer__input {
+  margin-bottom: 25px;
+}
+.footer__button {
+  padding: 14px 40px;
 }
