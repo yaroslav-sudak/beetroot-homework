@@ -1,0 +1,38 @@
+* {
+  // border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $ff-base;
+  font-size: $fs-base + px;
+  background-color: $c-light-grey;
+  color: $c-black;
+}
+
+img {
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+a {
+  text-decoration: none;
+}
+ul, ol {
+  list-style-type: none;
+}
