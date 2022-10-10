@@ -14,7 +14,7 @@ if (user_age < 12) {
 } else if (user_age < 60) {
   console.log('Ти дорослий!!!');
 } else {
-  console.log('Ти пенсіонером!!!');
+  console.log('Ти пенсіонер!!!');
 }
 
 // * Switch number to symbol
@@ -100,9 +100,9 @@ for (let i = 0; i <= halfSize; i++) {
   }
 }
 if (isPalindrome) {
-  console.log('Palindrome');
+  console.log(`${palindrome} is a palindrome`);
 } else {
-  console.log('Not a palindrome');
+  console.log(`${palindrome} is not a palindrome`);
 }
 
 // * Discount
@@ -272,4 +272,4 @@ if (`${day}`.length === 1){
 if (`${month}`.length === 1){
   month = '0' + month;
 }
-alert(`Next day will be ${day}.${month}.${year}!!!`);
+console.log(`Next day will be ${day}.${month}.${year}!!!`);
