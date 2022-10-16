@@ -35,20 +35,15 @@ const connect = (a, b, c) => {
 log(connect(1, 4, 7));
 
 // * Area
-const figureArea = (a, b) => {
-  if (b) {
-    return a * b;
-  } else {
-    return a * a;
-  }
-};
+const figureArea = (a, b) => (b ? a * b : a * a);
+
 log(figureArea(4, 7));
 log(figureArea(6));
 
 // * Perfect number
 const perfectNumber = (a) => {
   let result = 0;
-  for (let i = 1; i < a; i++) {
+  for (let i = 1; i <= a / 2; i++) {
     if (a % i === 0) {
       result += i;
     }
@@ -58,8 +53,8 @@ const perfectNumber = (a) => {
   } else {
     return false;
   }
-}
-log(perfectNumber(5));
+};
+log(perfectNumber(51));
 log(perfectNumber(6));
 
 // * If perfect number in range
@@ -69,5 +64,5 @@ const range = (min, max) => {
     result[i] = perfectNumber(i);
   }
   return result;
-}
-log(range(2, 50))
+};
+log(range(2, 50));
