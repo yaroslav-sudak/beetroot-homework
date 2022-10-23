@@ -18,42 +18,8 @@ if (user_age < 12) {
 }
 
 // * Switch number to symbol
-const symbolNumber = +prompt('Input number from 0 to 9:');
-switch (symbolNumber) {
-  case 0:
-    console.log(')');
-    break;
-  case 1:
-    console.log('!');
-    break;
-  case 2:
-    console.log('@');
-    break;
-  case 3:
-    console.log('#');
-    break;
-  case 4:
-    console.log('$');
-    break;
-  case 5:
-    console.log('%');
-    break;
-  case 6:
-    console.log('^');
-    break;
-  case 7:
-    console.log('&');
-    break;
-  case 8:
-    console.log('*');
-    break;
-  case 9:
-    console.log('(');
-    break;
-  default:
-    console.log('Unknown number!!!');
-    break;
-}
+const symbols = [')', '!', '@', '#', '$', '%', '^', '&', '*', '('];
+console.log(symbols[+prompt('Input number from 0 to 9:')]);
 
 // * Range
 const rangeBegin = +prompt('Input start of the range:');
