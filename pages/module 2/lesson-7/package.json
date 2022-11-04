@@ -1,0 +1,14 @@
+{
+  "name": "my-first-ts-homework",
+  "version": "1.0.0",
+  "description": "Description",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w index.ts"
+  },
+  "keywords": [
+    "ts"
+  ],
+  "author": "yaroslav.sudak.i@gmail.com",
+  "license": "ISC"
+}

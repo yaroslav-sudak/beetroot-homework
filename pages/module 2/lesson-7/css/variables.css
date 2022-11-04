@@ -1,0 +1,68 @@
+:root {
+  /** Colors */
+  --c-black: #1c2321;
+  --c-white: #fff8e8;
+  --c-orange: #f96900;
+  --c-blue: #80a1d4;
+  --c-dark-blue: #82A6B1;
+  --c-green: #08a045;
+  --c-black-green: #2f4f4f;
+  /** Fonts */
+  --f-main-size: 30px;
+  /* * Borders */
+  --border: 25px;
+  /* Border base */
+  --b-base: 1px solid;
+  /* * Boder colors */
+  /* Border color green */
+  --b-c-green:#0E6655;
+  /* * Weather Colors */
+  --c-light-blue: #3399cc;
+  --c-blue: #33cccc;
+  --c-purple: #996699;
+  --c-red: #c24747;
+  --c-orange: #e2674a;
+  --c-yellow: #ffcc66;
+  --c-light-green: #99cc99;
+  --c-green-blue: #669999;
+  --c-pink: #cc6699;
+  --c-dark-green: #339966;
+  --c-dark-purple: #666699;
+  /* * Transitions */
+  /* Base transition */
+  --t-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* * Weather Styles */
+.c-light-blue {
+  background-color: var(--c-light-blue);
+}
+.c-blue {
+  background-color: var(--c-blue);
+}
+.c-purple {
+  background-color: var(--c-purple);
+}
+.c-red {
+  background-color: var(--c-red);
+}
+.c-orange {
+  background-color: var(--c-orange);
+}
+.c-yellow {
+  background-color: var(--c-yellow);
+}
+.c-light-green {
+  background-color: var(--c-light-green);
+}
+.c-green-blue {
+  background-color: var(--c-green-blue);
+}
+.c-pink {
+  background-color: var(--c-pink);
+}
+.c-dark-green {
+  background-color: var(--c-dark-green);
+}
+.c-dark-purple {
+  background-color: var(--c-dark-purple);
+}
