@@ -41,7 +41,7 @@ const createModal = (element: IPlaylistItem, audio: HTMLAudioElement) => {
     TagType.IMG,
     'modal__image'
   );
-  image.style.backgroundImage = `url(./assets/songs/images/${element.name}.jpg)`;
+  image.setAttribute('src', `./assets/songs/images/${element.name}.jpg`);
   modalWrapper.appendChild(image);
 
   // Content
@@ -63,18 +63,8 @@ const createModal = (element: IPlaylistItem, audio: HTMLAudioElement) => {
   subtitle.innerText = `${element.author}`;
   content.appendChild(subtitle);
 
-  // Button
-  const button: HTMLButtonElement = createElement<HTMLButtonElement>(
-    TagType.BUTTON,
-    'modal__button'
-  );
-  button.type = ButtonTypes.BUTTON;
-  button.addEventListener(EventListeners.CLICK, removePopUp);
-  content.appendChild(button);
-
   // Remove element function
   function removePopUp() {
-    button.removeEventListener(EventListeners.CLICK, removePopUp);
     modal.removeEventListener(EventListeners.CLICK, removePopUp);
     modal.style.opacity = '0';
     setTimeout(() => {
@@ -94,11 +84,10 @@ const createModal = (element: IPlaylistItem, audio: HTMLAudioElement) => {
 
 // Function that creates and show list of songs
 export const createList = () => {
-  // App
-  const app: HTMLElement | null = document.getElementById('app');
-
   // Audio
-  const audio: HTMLAudioElement | null = document.getElementById('js-audio') as HTMLAudioElement;
+  const audio: HTMLAudioElement | null = document.getElementById(
+    'js-audio'
+  ) as HTMLAudioElement;
 
   // Creating songs list
   const list: HTMLOListElement = createElement<HTMLOListElement>(
@@ -122,9 +111,10 @@ export const createList = () => {
     item.addEventListener(EventListeners.CLICK, () => {
       createModal(element, audio);
       audio?.setAttribute('src', `./assets/songs/audio/${element.name}.mp3`);
+      audio.volume = 0.05;
       audio.play();
     });
     list.appendChild(item);
   });
-  app?.appendChild(list);
+  return list;
 };

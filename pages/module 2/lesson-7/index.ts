@@ -1,10 +1,10 @@
-// import { createElement } from "./base";
-// import { TagType } from "./types/base.types";
-
+import { trafficLights } from "./trafficLights.js";
 import { createList } from "./base.js"
 
 document.addEventListener('DOMContentLoaded', () => {
-  createList();
+  const app = document.getElementById('app');
+  app?.appendChild(createList());
+  app?.appendChild(trafficLights());
 })
 
 // const div = createElement(TagType.DIV, 'clas');

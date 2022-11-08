@@ -17,4 +17,3 @@ export var ButtonTypes;
     ButtonTypes["BUTTON"] = "button";
     ButtonTypes["RESET"] = "reset";
 })(ButtonTypes || (ButtonTypes = {}));
-//# sourceMappingURL=base.types.js.map
